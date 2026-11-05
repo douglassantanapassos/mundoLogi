@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Lógi - Cadastro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="container">
+        <!-- Lado Esquerdo: Logo -->
+        <div class="logo-container">
+            <img src="assets/logo.png" alt="Mundo Lógi Logo" class="logo">
+        </div>
+
+        <!-- Lado Direito: Formulário de Cadastro -->
+        <div class="form-wrapper">
+            <div class="form-box">
+                <h2>Criar Conta</h2>
+                <form id="form-cadastro">
+                    <input type="text" placeholder="Nome" required>
+                    <!-- Campo de data que muda para o calendário ao ser clicado -->
+                    <input type="text" placeholder="Data de Nascimento" required onfocus="(this.type='date')" onblur="(this.type='text')">
+                    <input type="email" placeholder="E-mail" required>
+                    <input type="password" placeholder="Senha" required>
+                    <input type="password" placeholder="Confirmar Senha" required>
+                </form>
+            </div>
+            <button type="submit" form="form-cadastro" class="btn-submit">Cadastrar</button>
+            <a href="/login" class="link-nav">Já tem conta? Entrar</a>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

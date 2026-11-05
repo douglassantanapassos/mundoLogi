@@ -29,6 +29,10 @@ button:active {
     transform: scale(0.95);
 }
 
+/* =========================================
+   Estilos da Página Inicial 
+   ========================================= */
+
 /* Menu Superior Direita */
 .header-menu {
     position: absolute;
@@ -98,4 +102,91 @@ button:active {
     width: 60%;
     height: 60%;
     object-fit: contain;
+}
+
+/* =========================================
+   Estilos das Páginas de Login e Cadastro 
+   ========================================= */
+
+.logo-container img {
+    width: 320px;
+    max-width: 100%;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px; 
+    width: 400px;
+}
+
+/* Bloco Azul Médio (Login e Cadastrar) */
+.form-box {
+    background-color: #9eb9cc; 
+    padding: 40px;
+    border-radius: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-box h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 18px; 
+}
+
+/* Blocos de inserir dados */
+input {
+    background-color: #c8d1d9; 
+    border: none;
+    padding: 15px 20px;
+    border-radius: 12px;
+    font-size: 16px;
+    color: #000;
+    outline: none;
+}
+
+input::placeholder {
+    color: #333; 
+}
+
+/* Botões Entrar e Cadastrar */
+.btn-submit {
+    background-color: #6f8dca; 
+    color: white;
+    border: none;
+    padding: 12px 60px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.1s ease;
+}
+
+.btn-submit:active {
+    transform: scale(0.95);
+}
+
+.link-nav {
+    margin-top: -10px;
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.link-nav:hover {
+    color: #6f8dca;
+    text-decoration: underline;
 }
