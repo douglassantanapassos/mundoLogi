@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #e5e4e4;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden; 
+}
+
+button {
+    background-color: #6f8dca;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.1s ease;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Menu Superior Direita */
+.header-menu {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.header-menu button {
+    padding: 10px 25px;
+    font-size: 16px;
+    border-radius: 12px;
+}
+
+/* Área Central */
+.container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15vw; /* Distância entre logo e imagem ilustrativa */
+    margin-top: 40px;
+}
+
+.coluna-esq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.logo {
+    width: 300px;
+    max-width: 100%;
+}
+
+.btn-jogar {
+    padding: 15px 0;
+    width: 250px;
+    font-size: 22px;
+    border-radius: 12px;
+}
+
+.coluna-dir .ilustrativa {
+    width: 450px;
+    max-width: 100%;
+}
+
+/* Botão de Som Inferior */
+.footer-menu {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+.btn-icone {
+    width: 65px;
+    height: 65px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-icone img {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+}
